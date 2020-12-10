@@ -1,0 +1,6 @@
+#!/home/cloudera/miniconda3/bin/python3.8
+import sys
+for line in sys.stdin:
+    values = line.split("|")
+    print('%s    %s' % (values[2], values[4]))
+    
