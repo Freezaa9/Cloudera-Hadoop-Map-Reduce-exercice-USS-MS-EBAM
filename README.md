@@ -20,7 +20,7 @@ hadoop jar /usr/lib/hadoop-0.20-mapreduce/contrib/streaming/hadoop-streaming-2.6
 -reducer "/home/cloudera/shares/partage/reducer.py"   
 -output out  
 
-**Atelier 1: Total des ventes par magasin **  
+**Atelier 1: Total des ventes par magasin**  
 
 L’objectif : 
 	Se familiariser avec le traitement distribué
