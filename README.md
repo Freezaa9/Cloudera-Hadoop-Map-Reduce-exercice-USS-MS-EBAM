@@ -1,26 +1,27 @@
 # Cloudera-Hadoop-Map-Reduce-exercice-USS-MS-EBAM
-3 training example of Map and Reduce fonction on Cloudera platform
+3 training example of Map and Reduce fonction on Cloudera platform  
 
-https://www.cloudera.com/downloads/quickstart_vms/5-13/config.html
+https://www.cloudera.com/downloads/quickstart_vms/5-13/config.html  
 
-**VMWARE Cloudera Quickstart virtual machine**
-https://downloads.cloudera.com/demo_vm/vmware/cloudera-quickstart-vm-5.13.0-0-vmware.zip
+**VMWARE Cloudera Quickstart virtual machine**  
+https://downloads.cloudera.com/demo_vm/vmware/cloudera-quickstart-vm-5.13.0-0-vmware.zip  
 
-**Local test MAP and REDUCE fonction:**
-**MAP**
-echo " A A B B C C D D D D D D " | ./mapper.py
-cat ./data.csv | ./mapper.py
-**MAP and REDUCE**
-cat ./data.csv | ./mapper.py | ./reducer.py
+**Local test MAP and REDUCE fonction:**  
+**MAP**  
+echo " A A B B C C D D D D D D " | ./mapper.py  
+cat ./data.csv | ./mapper.py  
+**MAP and REDUCE**  
+cat ./data.csv | ./mapper.py | ./reducer.py  
 
-**MAP and REDUCE fonction with HADOOP:**
-hadoop jar /usr/lib/hadoop-0.20-mapreduce/contrib/streaming/hadoop-streaming-2.6.0-mr1-cdh5.13.0.jar 
--input /home/cloudera/shares/partage/data.csv 
--mapper "/home/cloudera/shares/partage/mapper.py" 
--reducer "/home/cloudera/shares/partage/reducer.py" 
--output out
+**MAP and REDUCE fonction with HADOOP:**  
+hadoop jar /usr/lib/hadoop-0.20-mapreduce/contrib/streaming/hadoop-streaming-2.6.0-mr1-cdh5.13.0.jar   
+-input /home/cloudera/shares/partage/data.csv   
+-mapper "/home/cloudera/shares/partage/mapper.py"   
+-reducer "/home/cloudera/shares/partage/reducer.py"   
+-output out  
 
-**Atelier 1: Total des ventes par magasin **
+**Atelier 1: Total des ventes par magasin **  
+
 L’objectif : 
 	Se familiariser avec le traitement distribué
 	Utilisation du langage python pour la création des fonctions Map et Reduce
@@ -57,7 +58,8 @@ c.	Lire le résultat sur Hadoop
 
 
 
-**Atelier 2: Calcul du salaire Min et Max**
+**Atelier 2: Calcul du salaire Min et Max**  
+
 L’objectif :
 
 Se familiariser avec le traitement distribué
